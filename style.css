@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+#scanner {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.selector {
+    cursor: pointer;
+    display: inline-block;
+    margin: 20px;
+}
+
+#outdiv {
+    width: 100%;
+    margin: 20px auto;
+}
+
+#qr-canvas {
+    display: none;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin: 20px;
+    padding: 10px;
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    border-radius: 5px;
+    color: #3c763d;
+    display: none;
+}
+
+#result.error {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+}
+
+#qr-canvas {
+    display: none;
+}
+
+#outdiv {
+    width: 240px;
+    height: 240px;
+}
+
+#v {
+    width: 240px;
+    height: 240px;
+}
+
+@media screen and (max-width: 480px) {
+
+    #outdiv {
+        width: 190px;
+        height: 190px;
+    }
+
+    #v {
+        width: 190px;
+        height: 190px;
+    }
+
+    @media screen and (max-device-width: 480px)
+    and (orientation: portrait) {
+
+        #outdiv {
+            width: 270px;
+            height: 270px;
+
+        }
+
+        #v {
+            width: 270px;
+            height: 270px;
+        }
+
+    }
+
+}
